@@ -1,0 +1,12 @@
+extends layout/index
+block content
+  h1 Login 
+  div
+    form(action="/api/users/login", method="POST")
+      label(for="email") Email
+      input(type="text", placeholder="Your email", name="email")
+      label(for="password") Password 
+      input(type="password", placeholder="Your password", name="password")
+      br
+      br
+      input(type="submit")
